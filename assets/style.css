@@ -38,7 +38,7 @@ body{
     background-size: cover;
 } */
 .image1{
-    background-image: url(./Images/coding_portfolio.jpeg);
+    background-image: url(./images/coding_portfolio.jpeg);
     height: 400px;
     width: 100%;
     background-attachment: fixed;
@@ -48,7 +48,7 @@ body{
 }
 
 .image2{
-    background-image: url(./Images/helloworld.gif);
+    background-image: url(./images/helloworld.gif);
     height: 400px;
     width: 100%;
     background-attachment: fixed;
@@ -193,7 +193,7 @@ h3{
     }
     
     .image1{
-        background-image: url(./Images/coding_portfolio.jpeg);
+        background-image: url(./images/coding_portfolio.jpeg);
         height: 200px;
         width: 100%;
         background-attachment: fixed;
@@ -203,7 +203,7 @@ h3{
     }
     
     .image2{
-        background-image: url(./Images/coding_portfolio.jpeg);
+        background-image: url(./images/coding_portfolio.jpeg);
         height: 200px;
         width: 100%;
         background-attachment: fixed;
