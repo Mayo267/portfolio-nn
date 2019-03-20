@@ -1,31 +1,39 @@
 $( document ).ready(function() {
+    //Top scrolling
+    // function toTop(){
+    // document.documentElement.scrollTop = 0;
+    // };
     // About button scrolling
     $("#nav-button2").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#about-box").offset().top
+            scrollTop: $("#about-box").offset().top -75
         }, 1000);
     });
     //Portfolio scrolling
     $("#nav-button3").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#port-box").offset().top
+            scrollTop: $("#port-box").offset().top -75
         }, 1500);
     });
     //Contact scrolling
     $("#nav-button4").click(function() {
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#contact-box").offset().top
+            scrollTop: $("#contact-box").offset().top -75
         }, 1500);
     });
     //Back to top button
-    $("#back-top").click(function() {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#nav").offset().top
-        }, 1500);
-    });
+    // $("#back-top").click(function() {
+    //     $([document.documentElement, document.body]).animate({
+    //         scrollTop: $("#nav").offset().top
+    //     }, 1500);
+    // });
     //Project link
     $("#project").click(function(){
         window.open('https://fernandamarr.github.io/Project-1/', '_blank');
+    });
+    //Project2 Link
+    $("#project2").click(function(){
+        window.open('https://github.com/cpharshaw/bootcampProjectTwo');
     });
     //giphy link
     $("#giphy").click(function(){
@@ -43,6 +51,13 @@ $( document ).ready(function() {
     $("#train").click(function(){
         window.open('https://mayo267.github.io/Train-Times/', '_blank');
     });
-    
+    //GitHub Button
+    $("#githubbutton").click(function(){
+        window.open("https://github.com/Mayo267");
+    });
+    //LinkedIn Button
+    $("#linkedInButton").click(function(){
+        window.open("https://www.linkedin.com/in/andrew-mayo-36464016a/");
+    });
 
 });

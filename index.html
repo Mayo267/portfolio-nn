@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-    <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--Animate css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+        <!-- Bootstrap Link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--Animate css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <!-- Link to Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
 
 
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
 
-<body>
-        <nav id="nav" class="navbar sticky-top navbar-dark bg-dark">
+    <body>
+        <nav id="nav" class="navbar" data-spy="affix" data-offset-top="197">
             <div id="animate-name">
-            <h1 id="nav-name">Andrew Mayo</h1>
+                <h1 onclick="toTop()" id="nav-name">Andrew Mayo</h1>
             </div>
             <ul id="nav-buttons">
                 <!-- <button id="nav-button1" class="btn btn-outline-success" type="button">Home</button> -->
@@ -35,9 +38,9 @@
         </nav>
 
         <!--Carousel needs to have images of projects worked on!!!-->
-<!-- <div class="carousel-parallax"> -->
-    <!--Parallax for the carousel!!!!-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- <div class="carousel-parallax"> -->
+        <!--Parallax for the carousel!!!!-->
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -76,80 +79,100 @@
                 <span class="sr-only">Next</span>
                 </a>
                 
+            </div> -->
+
+        <!-- </div> -->
+        <img src="./assets/images/coding_portfolio.jpeg" class="img-fluid" alt="Responsive image">
+        <!--About me and other stuff!-->
+        <div id="about-box" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;">About</h3>
+            <!-- <img id="prof-image" src="./assets/images//bio-pic.jpg" alt="Me" class="prof-image"> -->
+            <img id="prof-image" src="./assets/images/bio-pic.jpg" alt="..." class="img-rounded">
+            <div class="bio-type">
+                <p id="bio">My name is Andrew and I started coding in 2018. My coding experience is brief yet extensive
+                    thanks to University of Penn's coding class. This is a new experience to me and I am excited to
+                    progress and learn as much as I can! Taking this coding class was a huge decision but it was one of
+                    the best decisions I could have made. The future seems a little brighter having learned such an
+                    amazing skill. Some of the languages we've gotten comfortable with are: HTML, CSS, JavaScript,
+                    jQuery and more to come...</p>
+            </div>
+            <div class="code-imgs">
+                <img id="code-img" src="./assets/images/html1-port.png" alt="..." class="img-circle">
+
+                <img id="code-img" src="./assets/images/css1-port.png" alt="..." class="img-circle">
+
+                <img id="code-img" src="./assets/images/js-port.png" alt="..." class="img-circle">
+
+                <img id="code-img" src="./assets/images/jquery-port.png" alt="..." class="img-circle">
+
+                <img id="code-img" src="./assets/images/node-port.png" alt="..." class="img-circle">
+
+                <img id="code-img" src="./assets/images/mysql-port.png" alt="..." class="img-circle">
+            </div>
+            <button id="linkedInButton" type="button" class="btn btn-primary">LinkedIn</button>
+        </div>
+
+        <div class="image1"></div>
+
+        <!--Display ability to look at individual projects worked on!!-->
+        <div id="port-box" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;">Portfolio</h3>
+            <!-- <div class="boxes"> -->
+
+            <div id="project" class="card" style="width: 18rem;">
+                <img id="card-img" src="./assets/images/Screen Shot 2019-01-14 at 7.03.35 PM.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Project 1</p>
+                </div>
             </div>
 
-<!-- </div> -->
-
-            <!--About me and other stuff!-->
-            <div id="about-box" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-                    <h3 style="text-align:center;">About</h3>
-                    <!-- <img id="prof-image" src="./assets/images//bio-pic.jpg" alt="Me" class="prof-image"> -->
-                    <img id="prof-image" src="./assets/images/bio-pic.jpg" alt="..." class="img-rounded">
-                    <div class="bio-type">
-                    <p id="bio">My name is Andrew and I started coding in 2018. My coding experience is brief yet extensive thanks to University of Penn's coding class. This is a new experience to me and I am excited to progress and learn as much as I can! Taking this coding class was a huge decision but it was one of the best decisions I could have made. The future seems a little brighter having learned such an amazing skill. Some of the languages we've gotten comfortable with are: HTML, CSS, JavaScript, jQuery and more to come...</p>
+            <div id="project2" class="card" style="width: 18rem;">
+                    <img id="card-img" src="./assets/images/sign-inproj2.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Project 2</p>
                     </div>
-                    <div class="code-imgs">
-                    <img id="code-img" src="./assets/images/html1-port.png" alt="..." class="img-circle">
+            </div>
 
-                    <img id="code-img" src="./assets/images/css1-port.png" alt="..." class="img-circle">
-
-                    <img id="code-img" src="./assets/images/js-port.png" alt="..." class="img-circle">
-
-                    <img id="code-img" src="./assets/images/jquery-port.png" alt="..." class="img-circle">
-
-                    <img id="code-img" src="./assets/images/node-port.png" alt="..." class="img-circle">
-
-                    <img id="code-img" src="./assets/images/mysql-port.png" alt="..." class="img-circle">
-                    </div>
+            <div id="giphy" class="card" style="width: 18rem;">
+                <img id="card-img" src="./assets/images/Screen Shot 2019-01-14 at 6.57.57 PM.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">GIPHY</p>
                 </div>
+            </div>
 
-                <div class="image1"></div>
+            <div id="crystal" class="card" style="width: 18rem;">
+                <img id="card-img" src="./assets/images/crystal.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Crystal Collector Game</p>
+                </div>
+            </div>
 
-                <!--Display ability to look at individual projects worked on!!-->
-                <div id="port-box" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-                        <h3 style="text-align:center;">Portfolio</h3>
-                        <!-- <div class="boxes"> -->
-                            
-                            <div id="project" class="card" style="width: 18rem;">
-                                <img id="card-img" src="./assets/images/Screen Shot 2019-01-14 at 7.03.35 PM.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Project 1</p>
-                                </div>
-                            </div>
+            <div id="trivia" class="card" style="width: 18rem;">
+                <img id="card-img" src="./assets/images/Screen Shot 2019-01-14 at 6.55.39 PM.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Trivia Game</p>
+                </div>
+            </div>
+            <div id="train" class="card" style="width: 18rem;">
+                <img id="card-img" src="./assets/images/Screen Shot 2019-01-14 at 6.54.39 PM.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <p class="card-text">Train Times</p>
+                </div>
+            </div>
+            <!-- </div> -->
+            <button id="githubbutton" type="button" class="btn btn-success" href="https://github.com/Mayo267">Go to my
+                GitHub Page!</button>
 
-                            <div id="giphy" class="card" style="width: 18rem;">
-                                <img id="card-img" src="./assets/images/Screen Shot 2019-01-14 at 6.57.57 PM.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">GIPHY</p>
-                                    </div>
-                            </div>
+        </div>
 
-                            <div id="crystal" class="card" style="width: 18rem;">
-                                <img id="card-img" src="./assets/images/crystal.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Crystal Collector Game</p>
-                                    </div>
-                            </div>
-                                    
-                            <div id="trivia" class="card" style="width: 18rem;">
-                                <img id="card-img" src="./assets/images/Screen Shot 2019-01-14 at 6.55.39 PM.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Trivia Game</p>
-                                    </div>
-                            </div>
-                            <div id="train" class="card" style="width: 18rem;">
-                                <img id="card-img" src="./assets/images/Screen Shot 2019-01-14 at 6.54.39 PM.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Train Times</p>
-                                    </div>
-                            </div>
-                        <!-- </div> -->
-                        
-                    </div>
-
-                    <div class="image2"></div>
-                    <!-- Contact page!-->
-                    <div id="contact-box" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <div class="image2"></div>
+        <!-- Contact page!-->
+        <!-- <div id="contact-box" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
                             <h3 style="text-align:center;">Contact</h3>
                             <form action= "mailto:amayo0925@gmail.com" method="POST" enctype="text/plain">
                                     <div id="names-contact" class="row">
@@ -169,15 +192,36 @@
                                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                     </div>
                                         <button id="submit" value="Email This Form" type="button" class="btn btn-outline-success">Submit</button>
-                                        <button id="back-top" type="button" class="btn btn-primary btn-lg btn-block">Back to the top!</button>
-                            </form>
-                            
-                    </div>
-    <!--JavaScript at end of body for optimized loading-->
-    
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-    <script src="./assets/app.js"></script>
+                                        <button id="back-top" type="button" class="btn btn-primary btn-lg btn-block">Back to the top!</button> -->
+        <!-- </form>  -->
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</body>
+        <!-- </div> -->
+        <h1 id="contactHead" class="display-1">Contact Me</h1>
+        <div id="contact-box">
+            <!-- <i id="emailIcon" style="font-size:80px" class="fa">&#xf0e0;</i> -->
+            <div  id="email" class="card" style="width: 18rem;">
+                <img src="./assets/images/emailIcon.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p id="contactText" class="card-text">amayo0925@gmail.com</p>
+                </div>
+            </div>
+            
+            <div id="phone" class="card" style="width: 18rem;">
+                <img src="./assets/images/phoneIcon.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p id="contactText" class="card-text">(856) 628-2296</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--JavaScript at end of body for optimized loading-->
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+        <script src="./assets/app.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    </body>
+
 </html>
