@@ -68,7 +68,7 @@ body{
     z-index: 1000;
     position: fixed;
     overflow: hidden;
-    background: linear-gradient(to bottom right,#1E90FF, whitesmoke);
+    /* background: linear-gradient(to bottom right,#1E90FF, whitesmoke); */
     border-bottom: .5px solid #1E90FF;
 }
 
@@ -278,7 +278,7 @@ h3{
     overflow: hidden;
     /* background: #4F4A4A;
     border-bottom: 1px solid #1E90FF; */
-    background: linear-gradient(to bottom right,#1E90FF, whitesmoke);
+    /* background: linear-gradient(to bottom right,#1E90FF, whitesmoke); */
     border-bottom: .5px solid #1E90FF;
     margin-bottom: 200px;
     }
