@@ -29,7 +29,7 @@ $( document ).ready(function() {
     // });
     //Project link
     $("#project").click(function(){
-        window.open('https://fernandamarr.github.io/Project-1/', '_blank');
+        window.open('http://www.fernandamarroquin.com/Movie-Wishlist/', '_blank');
     });
     //Project2 Link
     $("#project2").click(function(){
