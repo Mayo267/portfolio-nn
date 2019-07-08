@@ -51,6 +51,10 @@ $( document ).ready(function() {
     $("#train").click(function(){
         window.open('https://mayo267.github.io/Train-Times/', '_blank');
     });
+    //RPS link
+    $("#rps").click(function(){
+        window.open('https://mayo267.github.io/RPS_fun/', '_blank');
+    });
     //GitHub Button
     $("#githubbutton").click(function(){
         window.open("https://github.com/Mayo267");

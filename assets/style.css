@@ -209,9 +209,9 @@ h3{
 #project:hover{
     cursor: pointer;
 }
-#project2:hover{
+/* #project2:hover{
     cursor: pointer;
-}
+} */
 #giphy:hover{
     cursor: pointer;
 }
@@ -219,6 +219,9 @@ h3{
     cursor: pointer;
 }
 #trivia{
+    cursor: pointer;
+}
+#rps{
     cursor: pointer;
 }
 
