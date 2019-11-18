@@ -1,8 +1,5 @@
 $( document ).ready(function() {
     //Top scrolling
-    // function toTop(){
-    // document.documentElement.scrollTop = 0;
-    // };
     // About button scrolling
     $("#nav-button2").click(function() {
         $([document.documentElement, document.body]).animate({
